@@ -1,9 +1,11 @@
-import { FC } from 'react';
-import type { AppProps /*, AppContext */ } from 'next/app';
+import { FC } from "react";
+import type { AppProps /*, AppContext */ } from "next/app";
+import "bootstrap/dist/css/bootstrap.css";
+import "./global.scss";
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <div style={{ display: 'flex', maxWidth: 1100 }}>
+    <div className="main">
       <Component {...pageProps} />
     </div>
   );
