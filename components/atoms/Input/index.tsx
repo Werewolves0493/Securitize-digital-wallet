@@ -12,7 +12,7 @@ type InputProps = {
 };
 
 export const Input: React.FC<InputProps> = ({
-  className = "custom-input",
+  className,
   label,
   value,
   placeholder,

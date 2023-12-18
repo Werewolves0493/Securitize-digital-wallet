@@ -3,7 +3,12 @@ import Select from "react-select";
 import axios from "axios";
 import { NextPage, NextPageContext } from "next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWarning, faEdit, faCheck, faClose } from "@fortawesome/free-solid-svg-icons";
+import {
+  faWarning,
+  faEdit,
+  faCheck,
+  faClose,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { Button } from "components/atoms/Button";
 import { Input } from "components/atoms/Input";
@@ -118,7 +123,6 @@ const Wallet: NextPage<Props> = ({ query }) => {
 
     setRate({ ...currentRate });
   };
-  console.log("selected: ", selected);
 
   return (
     <div className="mt-4" style={{ width: "600px", alignItems: "center" }}>
